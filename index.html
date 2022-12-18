@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rsschool-cv</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<main>
     <header>
-        <div>
-        <ul>
-            <li>Contacts</li>
-            <li>Summary</li>
-            <li> Skils</li>
-            <li>Code</li>
-            <li>Projects</li>
-            <li>Education</li>
-            <li>English</li>
+        <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#Code" class="nav-link">Code</a></li>
+            <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#English" class="nav-link">English</a></li>
         </ul>
-        </div>
+    </nav>
      </header>
-    <section>
-         <div>
+    <section class="section" id="profile">
+         <div class="container">
             <img src="assets\img\4.jpg" alt="my-photo">
             <h1>Nataliya Pererva</h1>
             <p>Front-end developer</p>
         </div>
     </section>
-    <section>
-        <div>
+    <section class="section" id="contacts">
+        <div class="container">
             <h2>Contacts</h2> 
             <ul>
                 <li>Dnipro, Ukraine</li>
@@ -38,13 +38,16 @@
                 <li>Discord: Natali#5574</li>
             </ul>
         </div>
-        <div>
+        </section>
+        <section class="section" id="summary">
+        <div class="container">
             <h2>Summary</h2>
-            <p>I have experience in software sales. Сomposed ten web-sites on Tilda and after this I decided that I wanted to be a front-end developer</p>
+            <p>I have experience in software sales. <br>
+                Сomposed ten web-sites on Tilda and after this I decided that I wanted to be a front-end developer</p>
         </div>
     </section>
-    <section>
-        <div>
+    <section class="section" id="skills">
+        <div class="container">
             <h2>Skills</h2>
             <ul>
                 <li>HTML, CSS, JavaScript</li>
@@ -52,70 +55,75 @@
                 <li>Figma, Canva</li>
             </ul>
         </div>
-        <div>
+        </section>
+        <section class="section" id="code">
+        <div class="container">
             <h2>Code</h2>
-            <p><code>
-                function countCommision(amount, currency) {<br>
-                 let commision = 0;<br>
-                 
-                 if (currency == 'UAH') {<br>
-                   if (amount <= 1000) {<br>
-                     commision = 2;<br>
-                   } else {<br>
-                     commision = 1;<br>
-                   }<br>
-                 }<br>
-                 
-                 if (currency == 'USD') {<br>
-                   if (amount <= 5000) {<br>
-                     commision = 0.5;<br>
-                   } else {<br>
-                     commision = 0.25;<br>
-                   }<br>
-                 }<br>
-                
-                 if (currency == 'EUR') {<br>
-                   if (amount <= 3000) {<br>
-                     commision = 0.75;<br>
-                   } else {<br>
-                     commision = 0;<br>
-                   }
-                 }<br>
-                
-                 return amount * commision / 100;<br>
-                }<br>
-                
-                // examples<br>
-                countCommision(20000, 'USD'); // ===> 50<br>
-                countCommision(500, 'UAH'); // ===> 10<br>
-                countCommision(2000, 'UAH'); // ===> 20</code></p>
+            <pre><code>
+    function countCommision(amount, currency) {
+        let commision = 0;
+        
+        if (currency == 'UAH') {
+            if (amount <= 1000) {
+                commision = 2;
+            } else {
+                commision = 1;
+            }
+        }
+        
+        if (currency == 'USD') {
+            if (amount <= 5000) {
+                commision = 0.5;
+            } else {
+                commision = 0.25;
+            }
+        }
+    
+        if (currency == 'EUR') {
+            if (amount <= 3000) {
+                commision = 0.75;
+            } else {
+                commision = 0;
+            }
+        }
+    
+        return amount * commision / 100;
+    }
+    
+    // examples
+    countCommision(20000, 'USD'); // ===> 50
+    countCommision(500, 'UAH'); // ===> 10
+    countCommision(2000, 'UAH'); // ===> 20</code>
+            </pre>
         </div>
     </section>
-    <section>
-        <div>
+    <section class="section" id="courses">
+        <div class="container">
             <h2>Courses</h2>
             <ul>
                 <li>RS Schools Course «JavaScript/Front-end. Stage 0»</li>
                 <li>Gromcode Javascript-basics</li>
             </ul>
         </div>
-        <div>
+    </section>
+    <section class="section" id="projects">
+        <div class="container">
             <h2>Projects</h2>
             <ul>
                 <li>CV</li>
             </ul>
         </div>
     </section>
-    <section>
-        <div>
+    <section class="section" id="english">
+        <div class="container">
             <h2>English</h2>
             <ul>
-                <li>B1 Pre-intermidiate</li>
+                <li>B1 Pre-intermediate</li>
             </ul>
         </div>
     </section>
     <footer>
-
+        <p>2022</p>
     </footer>
-</body>
+</main>
 </html>
