@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>rsschool-cv</title>
 </head>
 <body>
-    <p>Hello, Javascript!</p>
+    <header>
+        <div>
+        <ul>
+            <li>Contacts</li>
+            <li>Summary</li>
+            <li> Skils</li>
+            <li>Code</li>
+            <li>Projects</li>
+            <li>Education</li>
+            <li>English</li>
+        </ul>
+        </div>
+     </header>
+    <section>
+         <div>
+            <img src="C:\Users\Natali\Desktop\git\CV-cross-check\rsschool-cv\assets\img\4.jpg" alt="my-photo">
+            <h1>Nataliya Pererva</h1>
+            <p>Front-end developer</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Contacts</h2> 
+            <ul>
+                <li>Dnipro, Ukraine</li>
+                <li>Email: pererva.n@gmail.com</li>
+                <li>Github: BusinkaN</li>
+                <li>Telegram: @NataliyaPererva</li>
+                <li>Discord: Natali#5574</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Summary</h2>
+            <p>I have experience in software sales. Сomposed ten web-sites on Tilda and after this I decided that I wanted to be a front-end developer</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Git, GitHub</li>
+                <li>Figma, Canva</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Code</h2>
+            <p>'use strict';
+                /**
+                 * @param {number} amount
+                 * @param {string} currency
+                 * @return {number}
+                 */
+                function countCommision(amount, currency) {
+                 let commision = 0;
+                 
+                 if (currency == 'UAH') {
+                   if (amount <= 1000) {
+                     commision = 2;
+                   } else {
+                     commision = 1;
+                   }
+                 }
+                 
+                 if (currency == 'USD') {
+                   if (amount <= 5000) {
+                     commision = 0.5;
+                   } else {
+                     commision = 0.25;
+                   }
+                 }
+                
+                 if (currency == 'EUR') {
+                   if (amount <= 3000) {
+                     commision = 0.75;
+                   } else {
+                     commision = 0;
+                   }
+                 }
+                
+                 return amount * commision / 100;
+                }
+                
+                // examples
+                countCommision(20000, 'USD'); // ===> 50
+                countCommision(500, 'UAH'); // ===> 10
+                countCommision(2000, 'UAH'); // ===> 20</p>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
 </body>
 </html>
