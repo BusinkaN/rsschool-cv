@@ -54,46 +54,64 @@
         </div>
         <div>
             <h2>Code</h2>
-            <p>'use strict';
-                /**
-                 * @param {number} amount
-                 * @param {string} currency
-                 * @return {number}
-                 */
-                function countCommision(amount, currency) {
-                 let commision = 0;
+            <p><code>
+                function countCommision(amount, currency) {<br>
+                 let commision = 0;<br>
                  
-                 if (currency == 'UAH') {
-                   if (amount <= 1000) {
-                     commision = 2;
-                   } else {
-                     commision = 1;
-                   }
-                 }
+                 if (currency == 'UAH') {<br>
+                   if (amount <= 1000) {<br>
+                     commision = 2;<br>
+                   } else {<br>
+                     commision = 1;<br>
+                   }<br>
+                 }<br>
                  
-                 if (currency == 'USD') {
-                   if (amount <= 5000) {
-                     commision = 0.5;
-                   } else {
-                     commision = 0.25;
+                 if (currency == 'USD') {<br>
+                   if (amount <= 5000) {<br>
+                     commision = 0.5;<br>
+                   } else {<br>
+                     commision = 0.25;<br>
+                   }<br>
+                 }<br>
+                
+                 if (currency == 'EUR') {<br>
+                   if (amount <= 3000) {<br>
+                     commision = 0.75;<br>
+                   } else {<br>
+                     commision = 0;<br>
                    }
-                 }
+                 }<br>
                 
-                 if (currency == 'EUR') {
-                   if (amount <= 3000) {
-                     commision = 0.75;
-                   } else {
-                     commision = 0;
-                   }
-                 }
+                 return amount * commision / 100;<br>
+                }<br>
                 
-                 return amount * commision / 100;
-                }
-                
-                // examples
-                countCommision(20000, 'USD'); // ===> 50
-                countCommision(500, 'UAH'); // ===> 10
-                countCommision(2000, 'UAH'); // ===> 20</p>
+                // examples<br>
+                countCommision(20000, 'USD'); // ===> 50<br>
+                countCommision(500, 'UAH'); // ===> 10<br>
+                countCommision(2000, 'UAH'); // ===> 20</code></p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Courses</h2>
+            <ul>
+                <li>RS Schools Course «JavaScript/Front-end. Stage 0»</li>
+                <li>Gromcode Javascript-basics</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Projects</h2>
+            <ul>
+                <li>CV</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>English</h2>
+            <ul>
+                <li>B1 Pre-intermidiate</li>
+            </ul>
         </div>
     </section>
     <footer>
