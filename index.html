@@ -59,41 +59,42 @@
         <section class="section" id="code">
         <div class="container">
             <h2>Code</h2>
-            <p><code>
-                function countCommision(amount, currency) {<br>
-                 let commision = 0;<br>
-                 
-                 if (currency == 'UAH') {<br>
-                   if (amount <= 1000) {<br>
-                     commision = 2;<br>
-                   } else {<br>
-                     commision = 1;<br>
-                   }<br>
-                 }<br>
-                 
-                 if (currency == 'USD') {<br>
-                   if (amount <= 5000) {<br>
-                     commision = 0.5;<br>
-                   } else {<br>
-                     commision = 0.25;<br>
-                   }<br>
-                 }<br>
-                
-                 if (currency == 'EUR') {<br>
-                   if (amount <= 3000) {<br>
-                     commision = 0.75;<br>
-                   } else {<br>
-                     commision = 0;<br>
-                   }
-                 }<br>
-                
-                 return amount * commision / 100;<br>
-                }<br>
-                
-                // examples<br>
-                countCommision(20000, 'USD'); // ===> 50<br>
-                countCommision(500, 'UAH'); // ===> 10<br>
-                countCommision(2000, 'UAH'); // ===> 20</code></p>
+            <pre><code>
+    function countCommision(amount, currency) {
+        let commision = 0;
+        
+        if (currency == 'UAH') {
+            if (amount <= 1000) {
+                commision = 2;
+            } else {
+                commision = 1;
+            }
+        }
+        
+        if (currency == 'USD') {
+            if (amount <= 5000) {
+                commision = 0.5;
+            } else {
+                commision = 0.25;
+            }
+        }
+    
+        if (currency == 'EUR') {
+            if (amount <= 3000) {
+                commision = 0.75;
+            } else {
+                commision = 0;
+            }
+        }
+    
+        return amount * commision / 100;
+    }
+    
+    // examples
+    countCommision(20000, 'USD'); // ===> 50
+    countCommision(500, 'UAH'); // ===> 10
+    countCommision(2000, 'UAH'); // ===> 20</code>
+            </pre>
         </div>
     </section>
     <section class="section" id="courses">
@@ -117,7 +118,7 @@
         <div class="container">
             <h2>English</h2>
             <ul>
-                <li>B1 Pre-intermidiate</li>
+                <li>B1 Pre-intermediate</li>
             </ul>
         </div>
     </section>
